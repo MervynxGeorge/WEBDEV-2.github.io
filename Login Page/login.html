@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Special+Elite&display=swap"
+      rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar target">
+    <a href="index.html" class="navbar-link">Home</a>
+    <a href="index.html" class="navbar-link">Popular Cars</a>
+    <a href="index.html" class="navbar-link">Video Gallery</a>
+    <a href="index.html" class="navbar-link">Image Gallery</a>
+    <a href="index.html" class="navbar-link">Contact</a>
+    <a href="index.html" class="navbar-link">Sign Up</a>
+    <a href="index.html" class="navbar-link">Log In</a>
+  </nav>
+
+    <div class="Login-Container">
+        <div class="Login-Box">
+            <h2>LOGIN</h2>
+            <input type="text" id="login-email" placeholder="Enter Your Username Or Email" required>
+            <input type="password" id="login-password" placeholder="Enter Your Password" required>
+            <p>New Here? <a href="signup.html">Create An Account</a></p>
+            <button type="button" onclick="login()">LOGIN</button>
+            <p id="login-message" style="color: green; display: none;">Login Successful!</p>
+            <p id="login-error" style="color: red; display: none;">Invalid Credentials</p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
